@@ -20,39 +20,31 @@
       href="./images/favicon-32x32.png"
     />
     <script
-    src="https://kit.fontawesome.com/20caaf4113.js"
-    crossorigin="anonymous"
-  ></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+      src="https://kit.fontawesome.com/20caaf4113.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>
       Frontend Mentor | Huddle landing page with alternating feature blocks
     </title>
-
-    <!-- <style>
-      .main-footer{
-        text-align: center;
-        font-size: 18px;
-      }
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style> -->
   </head>
   <body>
-    <!-- <img src="images/bg-hero-mobile.svg" alt=""> -->
-    <!-- <div id="top"></div> -->
-
-    <!---...............Page header starts here-->
+    <!--- Page header starts here -->
     <header>
-      <nav>
+      <nav class="top">
         <div class="huddle-logo">
-          <img
-            src="images/logo.svg"
-            alt="huddle official Logo"
-          
-          />
+          <a href="aboutUs.html"
+            ><img src="images/logo.svg" alt="huddle official Logo"
+          /></a>
         </div>
-        <a href="free.html" class="nav-btn">Try It Free</a>
+        <a href="free.html" target="_blank" class="nav-btn">Try It Free</a>
       </nav>
 
       <!-- Hero section starts here -->
@@ -60,24 +52,27 @@
         <div class="hero-content">
           <h1>Build The Community Your Fans Will Love</h1>
           <p>
-            Huddle re-imagines the way we build communities. You have a voice, but
-            so does your audience. Create connections with your users as you
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
             engage in genuine discussion.
           </p>
-          <a role="button" href="free.html" class="hero-btn"
+          <a
+            role="button"
+            href="free.html"
+            title="go to starter page"
+            class="hero-btn"
             >Get Started For Free</a
           >
         </div>
-        
+
         <div class="mockup-image">
           <img
             src="images/illustration-mockups.svg"
-            alt="Hero-section-illustration-mockup"  width="100%"
-          
+            alt="Hero-section-illustration-mockup"
           />
         </div>
       </section>
-          <!-- ...............Hero section ends here -->
+      <!-- ...............Hero section ends here -->
     </header>
     <!---................Page header ends here-->
 
@@ -87,8 +82,7 @@
         <div class="grow-image">
           <img
             src="images/illustration-grow-together.svg"
-            alt="grow-together-illustration-image"  width="100%"
-        
+            alt="grow-together-illustration-image"
           />
         </div>
 
@@ -108,8 +102,7 @@
         <div class="conversation-image">
           <img
             src="images/illustration-flowing-conversation.svg"
-            alt="flowing conversation-illustration-image" width="100%"
-          
+            alt="flowing conversation-illustration-image"
           />
         </div>
         <div class="flowing-content">
@@ -129,7 +122,6 @@
           <img
             src="images/illustration-your-users.svg"
             alt="users illustration image"
-            width="100%"
           />
         </div>
 
@@ -147,15 +139,17 @@
 
     <aside class="get-started">
       <h3>Ready To Build Your Community?</h3>
-      <a role="button" href="free.html" class="start-btn"
+      <a role="button" href="free.html" target="_blank" class="start-btn"
         >Get Started For Free</a
       >
     </aside>
 
-    <footer>
+    <section>
       <section class="contact-Info">
         <div class="huddle-logo-2">
-          <img src="images/logo.svg" alt="huddle official logo" />
+          <a href="contactUs.html"
+            ><img src="images/logo.svg" alt="huddle official logo"
+          /></a>
         </div>
 
         <div class="how-to-reach-us">
@@ -187,21 +181,24 @@
         </div>
       </section>
 
-      <div class="navigation-links">
+      <nav class="navigation-links">
         <ul class="grouped">
-          <li><a href="aboutUs.html">About Us</a></li>
-          <li><a href="whatWeDo.html">What We Do</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+          <li><a href="whatWeDo.html" target="_blank">What We Do</a></li>
+          <li><a href="faq.html" target="_blank">FAQ</a></li>
         </ul>
 
         <ul class="grouped-2">
-          <li><a href="career.html">Career</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contactUs.html">Contact Us</a></li>
+          <li><a href="career.html" target="_blank">Career</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
+          <li><a href="contactUs.html" target="_blank">Contact Us</a></li>
         </ul>
-      </div>
+      </nav>
+    </section>
+    <footer>
+      <div class="social-handles">
 
-      <div class="social-handles"></div>
+      </div>
 
       <div class="copyright">
         <small>&copy; Copyright 2018 Huddle. All rights reserved.</small>
@@ -213,9 +210,6 @@
           >Frontend Mentor</a
         >. Coded by <a href="#">Opara Goodness</a>.
       </p>
-
-      <!-- <div style="margin-top: 500px"></div> -->
-      <!-- <a href="#top">to top</a> -->
     </footer>
   </body>
 </html>
