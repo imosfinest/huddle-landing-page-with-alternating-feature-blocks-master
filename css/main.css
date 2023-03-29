@@ -1,20 +1,51 @@
+/* default settings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* setup styling */
 :root {
   --pink: hsl(322, 100%, 66%);
   --paleCyan: hsl(193, 100%, 96%);
   --darkCyan: hsl(192, 100%, 9%);
   --grayishBlue: hsl(208, 11%, 55%);
 }
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   text-align: center;
 }
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--darkCyan);
+}
+
+p {
+    color: var(--grayishBlue);
+}
+
+a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: black;
+  } 
+img {
+    width: 100%;
+    /* height: auto; */
+    /* display : inline-block; */
+  }
+.shadow{
+  box-shadow: 0 0 3rem;
+  color: rgba(0, 0, 0, 0.1);
+}
+  /* page styles */
 header {
   background-image: url("../images/bg-hero-mobile.svg");
   background-color: var(--paleCyan);
@@ -22,7 +53,7 @@ header {
   background-repeat: no-repeat;
   /* background-size: cover; */
 }
-.top {
+.top-nav {
   display: flex;
   justify-content: space-between;
   padding: 1.4rem 1rem;
@@ -34,6 +65,7 @@ header {
 .nav-btn {
   background-color: white;
   font-size: 0.625rem;
+
   font-weight: bold;
   padding: 0.3rem 1.5rem;
   border-radius: 1rem;
@@ -42,20 +74,12 @@ header {
 .hero-content {
   padding: 0 2.25rem;
 }
-h1,
-h2,
-h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: var(--darkCyan);
-}
+
 .hero-content p {
   margin-top: 1.5rem;
   margin-bottom: 3rem;
 }
-p {
-    color: var(--grayishBlue);
-}
+
 .hero-content a {
   padding: 0.79rem 3.75rem;
   border-radius: 2rem;
@@ -66,34 +90,113 @@ p {
   color: white;
   background: var(--pink);
 }
-a {
-    font-family: "Open Sans", sans-serif;
-    text-decoration: none;
-    color: black;
-  }  
+ 
 .hero-content a:hover {
   color: blue;
   background-color: coral;
   text-decoration: none;
 }
-img {
-    width: 100%;
-    /* height: auto; */
-    /* display : inline-block; */
-  }
+
 .mockup-image {
   margin-top: 4rem;
-  margin-right: 1.7rem;
-  margin-left: 2.6rem;
+  margin-right: 1.9rem;
+  margin-left: 2.5rem;
+}
+/* Header style ends. */
+
+/* Illustration section styling starts here.  */
+#illustration-cards{
+  margin: 1.25rem;
+  padding-top: 0.5rem;
+}
+.card {
+  padding: 2.5rem;
+  padding-top: 0;
+  padding-bottom: 1rem;
+  /* margin-top: 1.5rem; */
+  margin-bottom: 2.2rem;
+  border-radius: 0.76rem;
+}
+.card-image {
+  margin-top: 2.5rem;
+  padding: 1rem;
+  height: 50%;
+  margin-bottom: 1rem;
 }
 
-
-
-
-
-
-.copyright {
-  align-self: end;
-  font-size: 0.75rem;
+.card h2{
+  font-size: 1.25rem;
   margin-top: 0;
 }
+.card p{
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+/* Illustration section styling ends here.  */
+.cta{
+ padding: 2.5rem 1rem;
+  background: white;
+  border-radius: 1rem;
+  margin: 0.625rem;
+  margin-top: 7.5rem;
+  position: relative;
+}
+.cta h3{
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+.cta a{
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  margin-top: 0.75rem;
+ 
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: white;
+  background: var(--pink);
+}
+
+/* footer styling */
+footer {
+  margin-top: -4.875rem;
+  padding: 1rem;
+  background: var(--darkCyan);
+  text-align: left;
+}
+.huddle-logo-2  {
+  margin-top: 7.75rem;
+  width: 10.5rem;
+}
+
+.how-to-reach-us{
+  padding-top: 0rem;
+}
+
+footer a {
+  color: white;
+  font-size: 1.125rem;
+}
+
+.copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+/* .attribution {
+  font-size: 8px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* .how-to-reach-us {
+  padding-top: 0rem;
+} */
+
+
+
