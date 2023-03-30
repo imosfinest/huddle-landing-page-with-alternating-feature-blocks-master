@@ -134,7 +134,7 @@ header {
   padding-bottom: 1.5rem;
 }
 /* Illustration section styling ends here.  */
-.cta{
+.intro{
  padding: 2.5rem 1rem;
   background: white;
   border-radius: 1rem;
@@ -142,26 +142,27 @@ header {
   margin-top: 7.5rem;
   position: relative;
 }
-.cta h3{
+.intro h3{
   font-size: 1.125rem;
   margin-bottom: 2rem;
 }
-.cta a{
+.intro a{
   padding: 0.5rem 2rem;
   border-radius: 2rem;
   margin-top: 0.75rem;
- 
   font-size: 0.75rem;
   font-weight: 700;
   color: white;
   background: var(--pink);
+  /* cursor: pointer; */
 }
 
 /* footer styling */
 footer {
+  background: var(--darkCyan);
   margin-top: -4.875rem;
   padding: 1rem;
-  background: var(--darkCyan);
+  
   text-align: left;
 }
 .huddle-logo-2  {
@@ -169,15 +170,61 @@ footer {
   width: 10.5rem;
 }
 
-.how-to-reach-us{
-  padding-top: 0rem;
+.locate{
+  display: flex;
+  margin-top: 25px;
 }
-
+.fa-location-dot{
+margin-right: 20px;
+color: white;
+}
+.address p{
+  font-size: 14px;
+  color: white;
+}
+.contact {
+  margin-top: 25px;
+}
+.contact p{
+  color: white;
+  line-height: 2.5;
+}
+p img {
+  width: 15px;
+}
+.contact-image{
+   margin-right: 10px;
+}
+.links{
+  margin-top: 40px;
+}
+.links li {
+  padding-top: 20px;
+}
 footer a {
   color: white;
-  font-size: 1.125rem;
+  font-size: 1.125rem; 
 }
 
+
+.social-icons {
+    text-align: center;
+    margin-top: 1.8rem;
+  }
+  /* .social-icons a{
+    padding: 20px;
+  } */
+  .social-icons a {
+    color: white;
+    display: inline-block;
+    margin: 0.175rem;
+    border: 1px solid;
+    width: 2rem;
+    height: 2rem;
+    line-height: 1.875rem;
+    border-radius: 50%;
+    font-size: 0.875rem;
+  }
 .copyright {
   font-family: "Poppins", sans-serif;
   font-size: 0.7rem;
@@ -186,13 +233,13 @@ footer a {
   color: white;
 }
 
-/* .attribution {
-  font-size: 8px;
+.attribution {
+  font-size: 10px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
+}
 
 /* .how-to-reach-us {
   padding-top: 0rem;
