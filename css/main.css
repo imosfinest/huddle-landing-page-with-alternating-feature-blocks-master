@@ -198,6 +198,9 @@ p img {
 .links{
   margin-top: 40px;
 }
+.group li{
+  list-style: none;
+}
 .links li {
   padding-top: 20px;
 }
